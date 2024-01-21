@@ -55,7 +55,6 @@
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li class="active"><a href="#home">Home</a></li>
-                                        <li><a href="#about">About Us</a></li>
                                         <li><a href="#fruits">Fruits</a></li>
                                         @if (User.Identity.IsAuthenticated)
                                         {
@@ -72,7 +71,7 @@
                                             @if (User.IsInRole("Admin"))
                                             {
                                                 <li>
-                                                    <a asp-controller="Dashboard" asp-action="Index">
+                                                    <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
                                                         Admin Panel
                                                     </a>
                                                 </li>

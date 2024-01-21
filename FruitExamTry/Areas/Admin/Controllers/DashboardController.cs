@@ -11,5 +11,7 @@ namespace FruitExamTry.Areas.Admin.Controllers
         {
             return View();
         }
+
+
     }
 }

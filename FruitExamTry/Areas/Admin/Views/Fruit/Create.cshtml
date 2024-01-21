@@ -1,0 +1,24 @@
+﻿@using FruitExamTry.Areas.Admin.ViewModels;
+@model CreateFruitVM
+
+<div class="container">
+	<form method="post">
+			<br>
+		<div class="mb-3">
+			<label asp-for="Title" class="form-label">Email address</label>
+			<input asp-for="Title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			<span asp-validation-for="Title" style="color:red"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Description" class="form-label">Password</label>
+			<input asp-for="Description" class="form-control" id="exampleInputPassword1">
+			<span asp-validation-for="Description" style="color:red"></span>
+		</div>
+		<div class="mb-3">
+			<label for="formFileMultiple" class="form-label">Multiple files input example</label>
+			<input class="form-control" type="file" id="formFileMultiple" multiple>
+		</div>
+		<br>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
